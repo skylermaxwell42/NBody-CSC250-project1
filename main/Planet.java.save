@@ -1,0 +1,84 @@
+public class Planet {
+
+	private double m_xPos;
+	private double m_yPos;
+	private double m_xVel;
+	private double m_yVel;
+	private double m_mass;
+	private String m_imgFileName;
+
+	public Planet(double xPos, double yPos, double xVel, double yVel, double mass, String imgFileName) {
+		m_xPos = xPos;
+		m_yPos = yPos;
+		m_xVel = xVel;
+		m_yVel = yVel;
+		m_mass = mass;
+		m_imgFileName = imgFileName;
+	}
+
+	public Planet(Planet copyPlanet) {
+		this   (copyPlanet.getxPos(),
+			copyPlanet.getyPos(),
+			copyPlanet.getxVel(),
+			copyPlanet.getyVel(),
+			copyPlanet.getMass(),
+			copyPlanet.getImgFileName());
+	}
+
+	public double calcDistance(Planet planet1, Planet planet2) {
+		
+
+	public double getxPos() {
+		return m_xPos;
+	}
+
+	public void setxPos(double xPos) {
+		m_xPos = xPos;
+		return;
+	}
+
+	public double getyPos() {
+		return m_yPos;
+	}
+
+	public void setyPos(double yPos) {
+		m_yPos = yPos;
+		return;
+	}
+
+	public double getxVel() {
+		return m_xVel;
+	}
+
+	public void setxVel(double xVel) {
+		m_xVel = xVel;
+		return;
+	}
+
+	public double getyVel() {
+		return m_yVel;
+	}
+
+	public void setyVel(double yVel) {
+		m_yVel = yVel;
+		return;
+	}
+
+	public double getMass() {
+		return m_mass;
+	}
+
+	public void setMass(double mass) {
+		m_mass = mass;
+		return;
+	}
+
+	public String getImgFileName() {
+		return m_imgFileName;
+	}
+
+	public void setImgFileName(String imgFileName) {
+		m_imgFileName = imgFileName;
+		return;
+	}
+}
